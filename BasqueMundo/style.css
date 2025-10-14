@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: "PT Sans";
 }
+body{
+    background-color: white ;
+}
 
 header{
     background-color: aliceblue;
@@ -57,13 +60,24 @@ span{
 
 .container-main{
     display: flex;
+    background-image: url(./assets/nbacourt.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 20px;
+    font-weight: 800;
 }
+
 .left-main{
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+}
+.left-main p{
+    font-size: 20px;
 }
 .right-main{
     width: 50%;
@@ -79,4 +93,51 @@ span{
     object-fit: cover;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+
+}
+i img{
+    width: 100px;
+    height: 100px;
+}
+.left-section{
+    width: 50%;
+    
+}
+.little-text p{
+    text-align: center;
+    padding: 20px 30px;
+    width: 1050px;
+    font-size: 30px;
+    font-weight: 800;
+    margin: 20px;
+    
+}
+.little-text{
+    display: inline-block;
+    margin: 50px;
+    background-color: aliceblue;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+}
+.right-section{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+.container-section{
+    display: flex;
+}
+.section-text1, .section-text2, .section-text3{
+    text-align: center;
+    background-color: aliceblue;
+    padding: 30px;
+    border-radius: 20px;
+    font-weight: 800;
+    margin: 60px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
