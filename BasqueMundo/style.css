@@ -131,6 +131,10 @@ i img{
 }
 .container-section{
     display: flex;
+    background-image: url(https://images.unsplash.com/photo-1504450758481-7338eba7524a?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bmJhJTIwY291cnR8ZW58MHx8MHx8fDA%3D);
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 .section-text1, .section-text2, .section-text3{
     text-align: center;
@@ -140,4 +144,22 @@ i img{
     font-weight: 800;
     margin: 60px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.upper-text p{
+    font-size: 50px;
+    text-align: center;
+    font-family: "BBH Sans Bogle";
+    color: blue;
+    -webkit-text-stroke: 1px rgb(214, 214, 4);
+    padding: 30;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    letter-spacing: 2px;
+    
+}
+.down-text p{
+    font-size: 50px;
+    font-family: "BBH Sans Bogle";
+    color: blue;
+    -webkit-text-stroke: 1px rgb(214, 214, 4);
+    margin-top: 600px;
 }
