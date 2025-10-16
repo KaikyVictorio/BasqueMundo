@@ -1,5 +1,5 @@
 const cardsContainer = document.getElementById('container-west');
-
+const allCardBody = document.querySelectorAll(".card-body")
 const cards = [
   { nome:"Golden State Warrios", img: "./assets/gswlogo.jpg", texto: "Liderado pelo icônico armador Stephen Curry, o time revolucionou o basquete com seu estilo de jogo baseado em arremessos de três pontos. Eles consolidaram uma dinastia no século XXI, conquistando múltiplos títulos e dominando a liga por anos." },
   { nome:"Los Angeles Lakers", img: "./assets/lakerslogo.jpg", texto: "A franquia mais vitoriosa do Oeste, ostentando inúmeros títulos e lendas históricas. Liderado por LeBron James, busca manter a tradição de sucesso e dominação na liga." }, 
@@ -20,9 +20,9 @@ const cards = [
 
 cards.forEach(card => {
   const cardHTML = `
-    <div class="card" style="width: 18rem;">
-      <img src="${card.img}" class="card-img-top" alt="Imagem do card">
-      <div class="card-body">
+    <div class="card" style="width: 16rem;">
+      <img src="${card.img}" class="card-img-top" alt="Imagem do card" style="max-width=50px; max-height= 50px">
+      <div class="card-body hidden" id="cardbody">
         <h3 class="gsw-name">${card.nome}</h3>
         <p class="card-text">${card.texto}</p>
       </div>
@@ -30,3 +30,13 @@ cards.forEach(card => {
   `;
   cardsContainer.innerHTML += cardHTML;
 });
+
+const imagens = document.querySelectorAll(".card-img-top");
+
+imagens.forEach((img) =>{
+  img.addEventListener("click", (c)=> {
+    const cardBody = img.nextElementSibling;
+    cardBody.classList.toggle("hidden");
+  })
+})
+

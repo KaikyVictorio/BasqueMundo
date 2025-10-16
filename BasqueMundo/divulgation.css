@@ -3,8 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "PT Sans";
-    
 }
+body{
+    background-color: #f2e9e6 ;
+}
+
 header{
     background-color: aliceblue;
     border-bottom-left-radius: 20px;
@@ -54,32 +57,26 @@ span{
     transform: translateY(-5px);
     background-color: orange;
 }
-.container-main{
-    display: flex;
-    background-color: #f2e9e6;
-}
-.container-west{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 50px;
-    
-}
-.card-body p, .card-body h3{
-    text-align: center;
-    font-weight: 600;
-    letter-spacing: 2px;
-}
-.card-img-top{
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-.hidden{
+.modal{
+    position: fixed;
     display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.card-body{
-    transition: all 0.3s ease;
-    text-align: center;
+.modal.open{
+    display: flex;
+   
+}
+form{
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 10px;
 }
