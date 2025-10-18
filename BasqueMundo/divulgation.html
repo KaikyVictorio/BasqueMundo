@@ -25,14 +25,30 @@
         </div>
     </header>
     <main>
+        <article id="textInfo">
+            <h2>Divulgue sua pelada e tenha um enorme <span>alcance!</span></h2>
+            <p>No Basque<span>Mundo</span>, buscamos popularizar ainda mais o esporte e mostrar que há espaço na nossa cultura!</p>
+        </article>
         <div class="container-button">
             <button class="openBtnModal" id="openBtnModal">Divulgue sua pelada</button>
+        </div>
+        <div class="container-info">
         </div>
         <div class="modal" id="modal">
             <form action="#" method="post">
                 <label for="nome">Insira o nome da pelada!</label>
-                <input type="text" id="nomePelada" placeholder="Pelada...">
-                <button class="finishBtnModal" id="closeBtnModal">Lançar pelada!</button><br>
+                <input type="text" id="nomePelada" placeholder="Pelada..." required>
+                <label for="nomeOrg">Nome do organizador</label>
+                <input type="text" id="nomeOrg" placeholder="Fulano..." required>
+                <label for="address">Qual a cidade e estado?</label>
+                <input type="text" id="address" placeholder="Ex: Recife, PE" required>
+                <label for="complement">Qual o complemento?</label>
+                <input type="text" id="complement" placeholder="Ex: Rua XX, Praça XXX" required>
+                <label for="days">Qual os dias da sua pelada?</label>
+                <input type="text" name="days" id="days" placeholder="Ex: Segunda-Quinta" required>
+                <label for="time">E qual o horário da pelada?</label>
+                <input type="time" id="time" class="time">
+                <button type="submit" class="finishBtnModal" id="finishBtnModal">Lançar pelada!</button><br>
                 <button class="closeBtn" id="closeBtn" type="reset">Fechar</button>
             </form>
         </div>

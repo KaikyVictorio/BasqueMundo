@@ -70,13 +70,117 @@ span{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.3s ease;
 }
 .modal.open{
     display: flex;
+    transition: all 0.3s ease;
    
 }
 form{
     background-color: aliceblue;
-    padding: 20px;
+    padding: 50px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: "PT Sans";
+    font-size: 20px;
+    width: 700px;
+    font-weight: 700;
+}
+form input{
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: none;
+    font-weight: 700;
+}
+form button{
+    border: none;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: orange;
+    font-size: 20px;
+    width: 50%;
+    margin: auto;
+    font-family: "PT Sans";
+    font-weight: 700;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+}
+.finishBtnModal:hover{
+    background-color: rgb(197, 128, 0);
+    transform: translateY(-5px);
+}
+.closeBtn{
+    background-color: rgb(199, 0, 0);
+    color: white;
+
+}
+
+.closeBtn:hover{
+    background-color: rgb(139, 0, 0);
+    transform: translateY(-5px);
+
+}
+
+.openBtnModal{
+    background-color: orange;
+    border: none;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    display: block;           
+    margin: 30px auto 20px;  
+}
+
+
+.openBtnModal:hover{
+    background-color: rgb(197, 128, 0);
+    transform: translateY(-5px);
+}
+.container-divulgation {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+  max-width: 1000px;
+}
+.pelada-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 15px 20px;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pelada-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.pelada-card h3 {
+  font-size: 20px;
+  color: orange;
+  margin-bottom: 8px;
+  font-weight: 800;
+}
+
+.pelada-card p {
+  margin-bottom: 5px;
+  color: #333;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.pelada-card strong {
+  color: orange;
 }

@@ -1,5 +1,6 @@
 const cardsContainer = document.getElementById('container-west');
 const allCardBody = document.querySelectorAll(".card-body")
+const cardsContainerEast = document.getElementById('container-east');
 const cards = [
   { nome:"Golden State Warrios", img: "./assets/gswlogo.jpg", texto: "Liderado pelo icônico armador Stephen Curry, o time revolucionou o basquete com seu estilo de jogo baseado em arremessos de três pontos. Eles consolidaram uma dinastia no século XXI, conquistando múltiplos títulos e dominando a liga por anos." },
   { nome:"Los Angeles Lakers", img: "./assets/lakerslogo.jpg", texto: "A franquia mais vitoriosa do Oeste, ostentando inúmeros títulos e lendas históricas. Liderado por LeBron James, busca manter a tradição de sucesso e dominação na liga." }, 
@@ -18,25 +19,39 @@ const cards = [
   { nome:"San Antonio Spurs", img: "./assets/spurslogo.png", texto: "Sob a liderança do lendário técnico Gregg Popovich, a equipe inicia uma nova era promissora com Victor Wembanyama. Estão focados no desenvolvimento paciente do seu novo astro para reviver os anos de glória." }, 
 ];
 
-cards.forEach(card => {
-  const cardHTML = `
-    <div class="card" style="width: 16rem;">
-      <img src="${card.img}" class="card-img-top" alt="Imagem do card" style="max-width=50px; max-height= 50px">
-      <div class="card-body hidden" id="cardbody">
-        <h3 class="gsw-name">${card.nome}</h3>
-        <p class="card-text">${card.texto}</p>
+const cardsEast = [
+  { nome:"Boston Celtics", img: "./assets/celticslogo.png", texto: "Com Tatum e Brown, são uma das forças mais equilibradas e históricas da liga." },
+  { nome:"Milwaukee Bucks", img: "./assets/buckslogo.png", texto: "Guiados por Giannis Antetokounmpo, combinam força, defesa e consistência." },
+  { nome:"Miami Heat", img: "./assets/heatlogo.png", texto: "Conhecidos por sua cultura de esforço e disciplina sob Erik Spoelstra e Jimmy Butler." },
+  { nome:"Philadelphia 76ers", img: "./assets/sixerslogo.png", texto: "Joel Embiid é o coração do time, buscando finalmente alcançar as finais." },
+  { nome:"Cleveland Cavaliers", img: "./assets/cavslogo.png", texto: "Com Donovan Mitchell e jovens talentos, são uma potência emergente." },
+  { nome:"New York Knicks", img: "./assets/knickslogo.png", texto: "Tradicional franquia que busca reviver seus dias de glória em Nova York." },
+  { nome:"Brooklyn Nets", img: "./assets/netslogo.png", texto: "Após reestruturação, aposta em jovens e versatilidade para o futuro." },
+  { nome:"Indiana Pacers", img: "./assets/pacerslogo.png", texto: "Tyrese Haliburton lidera um ataque veloz e criativo no Leste." },
+  { nome:"Atlanta Hawks", img: "./assets/hawkslogo.png", texto: "Trae Young é o maestro de um ataque dinâmico e de alta pontuação." },
+  { nome:"Chicago Bulls", img: "./assets/bullslogo.png", texto: "Histórico time de Jordan busca consistência com DeRozan e LaVine." },
+  { nome:"Toronto Raptors", img: "./assets/raptorslogo.png", texto: "Em reconstrução, mantém foco em jovens talentos e desenvolvimento tático." },
+  { nome:"Orlando Magic", img: "./assets/magiclogo.png", texto: "Elenco jovem e atlético, liderado por Paolo Banchero." },
+  { nome:"Charlotte Hornets", img: "./assets/hornetslogo.png", texto: "LaMelo Ball guia um time empolgante, mas ainda em amadurecimento." },
+  { nome:"Washington Wizards", img: "./assets/wizardslogo.png", texto: "Após mudanças, focam em reconstruir com paciência e draft picks." },
+  { nome:"Detroit Pistons", img: "./assets/pistonslogo.png", texto: "Time jovem liderado por Cade Cunningham, com foco em evolução gradual." },
+];
+
+function renderCards(cards, container) {
+  cards.forEach((card, index) => {
+    const cardHTML = `
+      <div class="card" style="width: 16rem;">
+        <img src="${card.img}" alt="${card.nome}" class="card-img-top">
+        <div class="card-body">
+          <h3 class="team-name">${card.nome}</h3>
+          <p class="card-text">${card.texto}</p>
+        </div>
       </div>
-    </div>
-  `;
-  cardsContainer.innerHTML += cardHTML;
-});
+    `;
+    container.innerHTML += cardHTML;
+  });
+}
 
-const imagens = document.querySelectorAll(".card-img-top");
-
-imagens.forEach((img) =>{
-  img.addEventListener("click", (c)=> {
-    const cardBody = img.nextElementSibling;
-    cardBody.classList.toggle("hidden");
-  })
-})
-
+// ======== RENDERIZAÇÃO ======== //
+renderCards(cards, cardsContainer);
+renderCards(cardsEast, cardsContainerEast);
