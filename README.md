@@ -48,7 +48,7 @@ Ele me ajudou a entender melhor como unir criatividade e programação — e me 
 **Kaiky Victório**  
 📘 Estudante de **Análise e Desenvolvimento de Sistemas (ADS)** e aluno do **BOLSA FUTURO DIGITAL (BFD)**  
 🎨 Apaixonado por design, criatividade e o mundo do basquete.  
-📧 Contato: kaikyvictório2006@gmail.com 
+📧 Contato: kaikyvictorio2006@gmail.com 
 
 ---
  
