@@ -12,15 +12,17 @@
 </head>
 <body>
     <header class="container-header">
-        <div class="logo-container">
-            <img src="./assets/basqueMundologo.png" alt="Bola de basquete" width="70px" height="70px">
-            <h1>Basque<span class="logo-span">Mundo</span></h1>
-        </div>
+        <a href="index.html" class="iconlogo">
+            <div class="logo-container">
+                <img src="./assets/basqueMundologo.png" alt="Bola de basquete" width="70px" height="70px">
+                <h1>Basque<span class="logo-span">Mundo</span></h1>
+            </div>
+        </a>
         <div class="options-container">
             <ul class="options">
                 <li><a href="/times.html">Times</a></li>
-                <li><a href="#">Divulgação</a></li>
-                <li><a href="#">Lojas</a></li>
+                <li><a href="/divulgation.html">Divulgação</a></li>
+                <li><a href="/lojas.html">Lojas</a></li>
             </ul>
         </div>
     </header>
@@ -34,6 +36,64 @@
         </div>
         <div class="container-info">
         </div>
+        <div class="container-divulgation">
+
+        </div>
+        <section class="highlight-container">
+            <h2 class="highlight-container__title">Por que divulgar sua pelada?</h2>
+            <div class="highlight-container__cards">
+                <div class="highlight-card">
+                    <img src="./assets/community.png" alt="Comunidade" class="highlight-card__img">
+                    <h3 class="highlight-card__title">Fortaleça a comunidade</h3>
+                    <p class="highlight-card__text">
+                        Divulgar sua pelada ajuda a conectar jogadores locais, criando um ambiente mais unido e ativo.
+                    </p>
+                </div>
+
+                <div class="highlight-card">
+                    <img src="./assets/visibilityicon.png" alt="Visibilidade" class="highlight-card__img">
+                    <h3 class="highlight-card__title">Aumente sua visibilidade</h3>
+                    <p class="highlight-card__text">
+                        Quanto mais pessoas conhecem seu evento, mais fácil é atrair novos participantes e apoiadores.
+                    </p>
+                </div>
+
+                <div class="highlight-card">
+                    <img src="./assets/basketballicon.png" alt="Esporte e inclusão" class="highlight-card__img">
+                    <h3 class="highlight-card__title">Incentive o esporte</h3>
+                    <p class="highlight-card__text">
+                        Cada pelada é um passo a mais na valorização do basquete de rua e da inclusão esportiva.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials-container">
+            <h2 class="testimonials-container__title">Quem já divulgou aprova!</h2>
+            <div class="testimonials-container__grid">
+                <article class="testimonial">
+                    <p class="testimonial__text">"Graças ao BasqueMundo, nossa pelada dobrou o número de jogadores e conseguimos patrocínio!"</p>
+                    <span class="testimonial__author">— Lucas, organizador da Pelada do Ibura</span>
+                </article>
+
+                <article class="testimonial">
+                    <p class="testimonial__text">"Divulgar aqui foi fácil e trouxe mais visibilidade para o basquete feminino da minha cidade."</p>
+                    <span class="testimonial__author">— Amanda, Pelada das Guerreiras</span>
+                </article>
+
+                <article class="testimonial">
+                    <p class="testimonial__text">"A plataforma ajudou a reunir pessoas que amam o basquete. A comunidade cresceu muito!"</p>
+                    <span class="testimonial__author">— Rafael, Basquete Zona Norte</span>
+                </article>
+            </div>
+        </section>
+
+        <footer class="footer-container">
+            <h3 class="footer-container__title">BasqueMundo</h3>
+            <p class="footer-container__text">Promovendo o basquete de base, o lazer e a união das comunidades.</p>
+            <p class="footer-container__copy">&copy; 2025 BasqueMundo — Todos os direitos reservados 🏀</p>
+        </footer>
+    </main>
         <div class="modal" id="modal">
             <form action="#" method="post">
                 <label for="nome">Insira o nome da pelada!</label>
@@ -51,9 +111,6 @@
                 <button type="submit" class="finishBtnModal" id="finishBtnModal">Lançar pelada!</button><br>
                 <button class="closeBtn" id="closeBtn" type="reset">Fechar</button>
             </form>
-        </div>
-        <div class="container-divulgation">
-
         </div>
     </main>
     <script src="/scripts/divulgation.js"></script>

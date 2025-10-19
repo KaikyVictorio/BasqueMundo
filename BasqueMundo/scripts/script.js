@@ -20,7 +20,7 @@ const cards = [
 ];
 
 const cardsEast = [
-  { nome:"Boston Celtics", img: "./assets/celticslogo.png", texto: "Com Tatum e Brown, são uma das forças mais equilibradas e históricas da liga." },
+  { nome:"Boston Celtics", img: "./assets/celtics.jpg", texto: "Com Tatum e Brown, são uma das forças mais equilibradas e históricas da liga." },
   { nome:"Milwaukee Bucks", img: "./assets/buckslogo.png", texto: "Guiados por Giannis Antetokounmpo, combinam força, defesa e consistência." },
   { nome:"Miami Heat", img: "./assets/heatlogo.png", texto: "Conhecidos por sua cultura de esforço e disciplina sob Erik Spoelstra e Jimmy Butler." },
   { nome:"Philadelphia 76ers", img: "./assets/sixerslogo.png", texto: "Joel Embiid é o coração do time, buscando finalmente alcançar as finais." },
